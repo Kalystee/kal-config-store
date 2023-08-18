@@ -1,0 +1,18 @@
+###  Encrypt value from json
+
+POST {{uri}}/encrypt
+Content-Type: text/plain
+
+{{value_to_be_encrypted}}
+
+> {% client.global.set("encrypted_value", response.body.toString()); %}
+
+### Decrypt value from json
+
+POST {{uri}}/decrypt
+Authorization: Basic kyleus {{config_server_pwd}}
+Content-Type: text/plain
+
+{{encrypted_value}
+
+###
