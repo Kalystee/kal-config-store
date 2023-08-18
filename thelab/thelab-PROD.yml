@@ -1,6 +1,6 @@
 ---
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/THE_LAB_PROD
-    username: kalystee
+    url: "jdbc:postgresql://localhost:5432/THE_LAB_PROD"
+    username: "kalystee"
     password: "{cipher}00ae9f52989c0aa6345c1fd87ab81caef51db2b796007b01522601b6a6e1c1a8"
